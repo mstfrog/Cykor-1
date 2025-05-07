@@ -117,6 +117,12 @@ void func1(int arg1, int arg2, int arg3)
     call_stack[SP] = 0;
     SP--;                       // SP = 7, FP = 4
 
+    call_stack[SP] = 0;
+    SP--;                       // SP = 6, FP = 4
+
+    call_stack[SP] = 0;
+    SP--;                       // SP = 5, FP = 4
+
     print_stack();
 }
 
@@ -159,6 +165,9 @@ void func2(int arg1, int arg2)
 
     call_stack[SP] = 0;
     SP--;                       // SP = 11, FP = 9
+
+    call_stack[SP] = 0;
+    SP--;                       // SP = 10, FP = 9
 
     print_stack();
 }
